@@ -1,2 +1,3 @@
 #!/bin/bash
-cut -c 1 | paste -s -d''
+while read -r line; do printf "%s" "${line:0:1}"; done
+
